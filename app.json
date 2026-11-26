@@ -14,6 +14,7 @@
     "android": {
       "package": "com.mesobgames.gebeta",
       "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#140D08"
       }
     },
@@ -24,6 +25,7 @@
       "eas": {
         "projectId": "4c7503f5-7eb2-4e43-add7-40216b0706f5"
       }
-    }
+    },
+    "icon": "./assets/icon.png"
   }
 }
