@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Gebeta",
+    "slug": "gebeta",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#140D08",
+    "scheme": "gebeta",
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "android": {
+      "package": "com.dhsolutions.gebeta",
+      "adaptiveIcon": {
+        "backgroundColor": "#140D08"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.dhsolutions.gebeta"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4c7503f5-7eb2-4e43-add7-40216b0706f5"
+      }
+    }
+  }
+}

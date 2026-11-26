@@ -1,0 +1,13 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Expo / phone build output
+dist-mobile/
+mobile/webAppHtml.ts
+.expo/
