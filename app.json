@@ -7,19 +7,28 @@
     "userInterfaceStyle": "dark",
     "backgroundColor": "#140D08",
     "scheme": "gebeta",
-    "platforms": [
-      "android",
-      "ios"
-    ],
+    "icon": "./assets/icon.png",
+    "platforms": ["android", "ios"],
     "android": {
       "package": "com.mesobgames.gebeta",
       "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#140D08"
       }
     },
     "ios": {
       "bundleIdentifier": "com.mesobgames.gebeta"
     },
+    "plugins": [
+      ["expo-dev-client"],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-3940256099942544~3347511713",
+          "iosAppId": "ca-app-pub-3940256099942544~1458002511"
+        }
+      ]
+    ],
     "extra": {
       "eas": {
         "projectId": "4c7503f5-7eb2-4e43-add7-40216b0706f5"
