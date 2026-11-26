@@ -7,25 +7,13 @@
     "userInterfaceStyle": "dark",
     "backgroundColor": "#140D08",
     "scheme": "gebeta",
-    "platforms": [
-      "android",
-      "ios"
-    ],
+    "platforms": ["android", "ios"],
     "android": {
-      "package": "com.mesobgames.gebeta",
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#140D08"
-      }
+      "package": "com.dhsolutions.gebeta",
+      "adaptiveIcon": { "backgroundColor": "#140D08" }
     },
     "ios": {
-      "bundleIdentifier": "com.mesobgames.gebeta"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "4c7503f5-7eb2-4e43-add7-40216b0706f5"
-      }
-    },
-    "icon": "./assets/icon.png"
+      "bundleIdentifier": "com.dhsolutions.gebeta"
+    }
   }
 }

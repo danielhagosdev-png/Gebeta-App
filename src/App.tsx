@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { haptic, requestReview } from './game/native';
+import { haptic, requestInterstitial, requestReview } from './game/native';
 import {
   BookOpen,
   Camera,
@@ -236,14 +236,19 @@ export default function App() {
     requestReview();
   }, [matchHistory.length]);
 
+  // Each new match starts after an interstitial ad (the native app shows it).
   const handleStartGame = useCallback(() => {
-    resetBoardState();
-    setPage('play');
+    void requestInterstitial().then(() => {
+      resetBoardState();
+      setPage('play');
+    });
   }, [resetBoardState]);
 
   const handleRestartMatch = useCallback(() => {
-    resetBoardState();
-    setPage('play');
+    void requestInterstitial().then(() => {
+      resetBoardState();
+      setPage('play');
+    });
   }, [resetBoardState]);
 
   const openSubPage = useCallback(
