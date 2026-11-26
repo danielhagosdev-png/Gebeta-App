@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { haptic, requestReview } from './game/native';
 import {
   BookOpen,
   Camera,
@@ -223,6 +224,18 @@ export default function App() {
     mode,
   ]);
 
+  // Ask for a Play Store rating once, after the 3rd finished match.
+  useEffect(() => {
+    if (matchHistory.length < 3) return;
+    try {
+      if (localStorage.getItem('gebeta_review_asked')) return;
+      localStorage.setItem('gebeta_review_asked', '1');
+    } catch {
+      return;
+    }
+    requestReview();
+  }, [matchHistory.length]);
+
   const handleStartGame = useCallback(() => {
     resetBoardState();
     setPage('play');
@@ -334,6 +347,8 @@ export default function App() {
 
       scheduleTimer(() => {
         setActiveCue(null);
+        const capturedNow = summary.capturedByPlayer + summary.capturedByOpponent;
+        haptic(nextState.gameOver ? 'success' : capturedNow > 0 ? 'medium' : 'light');
         setGameState(nextState);
 
         const totalCap = summary.capturedByPlayer + summary.capturedByOpponent;
