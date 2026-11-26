@@ -54,4 +54,4 @@ src/
 
 ## License
 
-© 2026 DH Solutions. All rights reserved.
+© 2026 Mesob Games Solutions. All rights reserved.

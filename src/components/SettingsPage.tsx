@@ -334,7 +334,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({
 
             <div className="rounded-xl bg-[#140D08] border border-[#D4A035]/15 p-4 space-y-1">
               <div className="text-sm font-display font-bold accent-text">
-                DH Solutions
+                Mesob Games Solutions
               </div>
               <div className="text-xs text-[#CBB597]">{t.developerCredit}</div>
               <div className="text-xs text-[#8E795F]">{t.copyrightText}</div>

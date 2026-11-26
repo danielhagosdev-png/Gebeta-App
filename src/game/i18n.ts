@@ -436,7 +436,7 @@ const ti: TranslationDict = {
     'ናይ መወዳእታ እምኒ ኣብ ጉድጓድ 2 ትዓልብ (3 + 1 = 4 ኣእማን!)።',
     'ናይ መወዳእታ ቤተሰብ! ንስኻ 4 ኣእማን ትወስድ።',
   ],
-  developerCredit: 'ብ Mesob GamesH Solutions ዝተሰርሐ',
+  developerCredit: 'ብ Mesob Games Solutions ዝተሰርሐ',
   copyrightText: '© 2026 Mesob Games Solutions. ኩሉ መሰል ዝተሓለወ እዩ።',
   dragToOrbitHint: '3D ሰሌዳ ንምዝዋር ስሓብ',
   shareButton: 'ኣካፍል',

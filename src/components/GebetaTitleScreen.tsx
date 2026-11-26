@@ -304,7 +304,7 @@ export const GebetaTitleScreen: React.FC<GebetaTitleScreenProps> = ({
         </div>
       </main>
 
-      {/* Bottom Safe Margin: Single-line hint + DH Solutions Copyright */}
+      {/* Bottom Safe Margin: Single-line hint + Mesob Games Solutions Copyright */}
       <div className="relative z-10 px-5 sm:px-10 pb-5 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 text-xs text-[#B8A286]">
         <p className="tracking-wide">{t.titleHint}</p>
         <p className="text-[#9E886D] whitespace-nowrap">

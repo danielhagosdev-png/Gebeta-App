@@ -12,13 +12,13 @@
       "ios"
     ],
     "android": {
-      "package": "com.dhsolutions.gebeta",
+      "package": "com.mesobgames.gebeta",
       "adaptiveIcon": {
         "backgroundColor": "#140D08"
       }
     },
     "ios": {
-      "bundleIdentifier": "com.dhsolutions.gebeta"
+      "bundleIdentifier": "com.mesobgames.gebeta"
     },
     "extra": {
       "eas": {
